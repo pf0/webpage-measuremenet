@@ -1,7 +1,7 @@
 #/bin/bash
 
 if ! [ $(command -v lighthouse) ]; then
-    echo "Found no lighthouse executable this system. Please get it from https://github.com/GoogleChrome/lighthouse"
+    echo "Found no lighthouse executable on this system. Please get it from https://github.com/GoogleChrome/lighthouse"
     exit 1
 elif [ $# -lt 1 ]; then
     echo "Please provide a target URL argument."
